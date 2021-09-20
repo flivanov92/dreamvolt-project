@@ -4,14 +4,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
 body {
-  background-image: url(#{$baseUrl}asset/image/become-a-web-developer-today.jpg);
-  background-size: cover;
+  // background-size: cover;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Rubik", sans-serif;
 }
+
 .content {
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.9);
