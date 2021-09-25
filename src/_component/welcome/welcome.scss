@@ -1,6 +1,6 @@
 .welcome {
   &__wrapper {
-    background-image: url(/asset/image/hero-5-1.jpg);
+    background-image: url(#{$baseUrl}asset/image/hero-5-1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;
