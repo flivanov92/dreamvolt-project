@@ -18,4 +18,13 @@ body {
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 1rem;
+  width: 960px;
+  
+  &-720 {
+    width: 720px;
+    margin: 0 auto;
+    // height: 720px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
