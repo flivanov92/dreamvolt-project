@@ -1,0 +1,133 @@
+.info-section {
+  grid-column: 1/-1;
+
+  &__title {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 500;
+    color: $darkgrey;
+    text-align: center;
+
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    color: $transparentGrey;
+    text-align: center;
+    padding: 0 84px;
+
+
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    flex-direction: column;
+  }
+
+  &__store-link {
+    margin-top: 20px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &:nth-child(1) {
+    & .item__title {
+      color: $item-first;
+    }
+
+    & .item__icon {
+      background-color: $item-first-border;
+
+      &::before {
+        background-color: $item-first;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    & .item__title {
+      color: $item-second;
+    }
+
+    & .item__icon {
+      background-color: $item-second-border;
+
+      &::before {
+        background-color: $item-second;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    & .item__title {
+      color: $item-third;
+    }
+
+    & .item__icon {
+      background-color: $item-third-border;
+
+      &::before {
+        background-color: $item-third;
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    & .item__title {
+      color: $item-fourth;
+    }
+
+    & .item__icon {
+      background-color: $item-fourth-border;
+
+      &::before {
+        background-color: $item-fourth;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__icon {
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-sizing: content-box;
+    position: relative;
+
+    &::before {
+
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      bottom: 10px;
+      right: 10px;
+      border-radius: 50%
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+}
