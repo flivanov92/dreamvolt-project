@@ -10,19 +10,20 @@
     color: #f8ab18;
     margin-top: 7rem;
   }
+
   //   flex-grow: 1;
-  
+
   &__intro {
     display: flex;
   }
-  
+
   &__body,
   &__intro {
     list-style-type: none;
     padding-left: 0;
     grid-column: 1/2;
   }
-  
+
   &__intro-message {
     padding: 1rem;
     font-family: Rubik;
@@ -31,7 +32,7 @@
     font-weight: 500;
     box-sizing: border-box;
     position: relative;
-    
+
     &:first-child {
       padding-left: 0;
     }
@@ -45,26 +46,27 @@
       right: -7px;
       top: 31px;
     }
-    
+
     &:nth-child(1) {
       color: $pink;
     }
-    
+
     &:nth-child(2) {
       color: $blue;
     }
-    
+
     &:nth-child(3) {
       color: $green;
     }
   }
-  
+
   &__body-item {
     font-size: 30px;
     color: grey;
-    
+    line-height: 1.5;
+
   }
-  
+
   &__extra {
     text-align: right;
     color: grey;
@@ -76,6 +78,17 @@
     grid-row: 2/4;
     justify-self: center;
   }
+
+  &__button1 {
+    grid-column: 1/2;
+    grid-row: 4/4;
+    margin-left: 25%;
+  }
+
+  &__button {
+    grid-column: 1/2;
+    grid-row: 4/4;
+    margin-left: 2%;
+    margin-top: 20%;
+  }
 }
-
-

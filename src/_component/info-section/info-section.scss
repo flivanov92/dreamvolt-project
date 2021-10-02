@@ -124,10 +124,26 @@
 
   &__title {
     margin-bottom: 20px;
+    text-align: center;
   }
 
   &__description {
     text-align: center;
   }
 
+}
+
+.item__icon {
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 76px;
+  height: 76px;
+  position: relative;
+}
+
+.item__icon>div::before {
+  color: white;
+  position: relative;
 }
