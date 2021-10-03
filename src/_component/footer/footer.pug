@@ -1,0 +1,12 @@
+ul.footer   
+    each socialmedia in data.footer
+        li.footer__social
+            div(class=`dreamvolt-${socialmedia.icon}`)
+            span= socialmedia.label
+
+//- ul.footer__new    
+//-     each socialmedia in data.footer
+//-         li.footer__social-new
+//-             div(class=`dreamvolt-${socialmedia.icon}`)
+//-             span= socialmedia.label 
+

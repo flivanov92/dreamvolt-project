@@ -1,39 +1,43 @@
 .content-720 
-    .info-section
-        header.info-section__head
-            h2.info-section__title DreamVolt Everyone 
-            p.info-section__description Dreamvolt is a goals and targets setting platform, that provides you with pathways to success.
+    //- parcurg fiecare element din colectia de tip array
+    //- pe care o gasesc la data.site
+    each alabala in data.site 
+        .info-section
+            header.info-section__head
+                h2.info-section__title= alabala.title
 
-        .info-section__body(
-            style=`background-image: url(${baseUrl}asset/image/bg-4-1.jpg)`
-        )
-            img(
-                src=`${baseUrl}asset/image/dreamwall1.png` width="154"
-            )
-            img.info-section__store-link(
-                src=`${baseUrl}asset/image/btn-apple.png`
-                width="151"
-            )
-        .info-section__footer
-            ul.item__wrapper  
-                li.item 
-                    .item__icon
-                        .dreamvolt-share2 
-                    .item__title Share your Vision
-                    .item__description Share your vision board
-                li.item 
-                    .item__icon 
-                        .dreamvolt-alarm 
-                    .item__title Daily Challenges
-                    .item__description Stay motivated with our Daily challenges    
-                li.item 
-                    .item__icon
-                        .dreamvolt-compass2 
-                    .item__title Explore
-                    .item__description Explore groups of like minded individuals
-                li.item 
-                    .item__icon
-                        .dreamvolt-road
-                    .item__title Pathway To Success 
-                    .item__description Tried and tested ways to achieve
+                if alabala.type !== 'footer'   
+                    p.info-section__description= alabala.description  
+
+            if alabala.type !== 'footer' 
+                .info-section__body(
+                    style=`background-image: url(${baseUrl}asset/image/bg-4-1.jpg)`
+                )
+                    img(
+                        src=`${baseUrl}asset/image/dreamwall1.png` width="154"
+                    )
+                    img.info-section__store-link(
+                        src=`${baseUrl}asset/image/btn-apple.png`
+                        width="151"
+                    )
+            .info-section__footer
+                ul.item__wrapper  
+                    each portocala in alabala.iconList 
+                        li.item 
+                            if alabala.type === 'footer'
+                                .item__icon-nustiu 
+                                    //- .dreamvolt-
+                                    div(class=`dreamvolt-${portocala.icon}`)
+                            else 
+                                .item__icon
+                                    //- .dreamvolt-
+                                    div(class=`dreamvolt-${portocala.icon}`)
+
+                            if alabala.type === 'footer'
+                                .item__title-footer= portocala.title  
+                            else 
+                                .item__title= portocala.title  
+                            .item__description= portocala.description 
+
+
 

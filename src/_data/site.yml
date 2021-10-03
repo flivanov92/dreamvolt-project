@@ -1,1 +1,60 @@
-message: "Today the weather is very nice."
+- title: Dreamvolt Everyone
+  iconList:
+    - icon: share2
+      title: Share your Vision
+      description: Share your vision board
+
+    - icon: alarm
+      title: Daily Challenges
+      description: Stay motivated with our Daily challenges
+
+    - icon: compass2
+      title: Explore
+      description: Explore groups of like minded individuals
+
+    - icon: road
+      title: Pathway To Success
+      description: Tried and tested ways to achieve
+
+  description: Dreamvolt focus on  goals and targets setting platform, that provides you with pathways to success.
+
+- title: Dreamvolt Education
+  iconList:
+    - icon: link
+      title: Engages
+      description: Dreamvolt engages, focuses, motivates and empowers students to take responsibility for their own development
+
+    - icon: trophy
+      title: Achieve
+      description: Dreamvolt allows students to achieve regular wins, increase confidence and create good habits
+
+    - icon: stats-bars
+      title: Explore
+      description: Dreamvolt allows students to look ahead and plan a course and career pathway
+
+    - icon: users
+      title: Pathway To Success
+      description: Dreamvolt places each student at the centre of their goals and targets in school and beyond
+
+  description: Dreamvolt Education is tailored for Schools & Universities. Providing a safe and secure environment for students to unlock their ambitions and bring their dreams to life.
+
+- title: Dreamvolt Features
+  type: footer
+  iconList:
+    - icon: clipboard
+      title: DREAMSTREAM
+      description: Keep up to date with your daily feed.
+
+    - icon: cogs
+      title: GROUPS
+      description: Join your tribe
+
+    - icon: binoculars
+      title: DREAMWALL
+      description: Visualise your goals
+
+    - icon: power
+      title: DREAMS
+      description: Manage your goals and dreams
+
+  description: Dreamvolt Education is tailored for Schools & Universities. Providing a safe and secure environment for students to unlock their ambitions and bring their dreams to life.

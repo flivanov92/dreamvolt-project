@@ -39,8 +39,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 100%;
-
 
 
   &:nth-child(1) {
@@ -102,9 +100,6 @@
   &__wrapper {
     display: flex;
     list-style-type: none;
-    gap: 2rem;
-    padding: 0;
-
   }
 
   &__icon {
@@ -132,12 +127,6 @@
     text-align: center;
   }
 
-  &__title-footer {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 0.86rem;
-  }
-
   &__description {
     text-align: center;
   }
@@ -152,19 +141,6 @@
   width: 76px;
   height: 76px;
   position: relative;
-}
-
-.item__icon-nustiu {
-  font-size: 40px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 120px;
-  height: 120px;
-  position: relative;
-  background-color: #00a8f4;
-  border-radius: 60%;
-  color: white;
 }
 
 .item__icon>div::before {
