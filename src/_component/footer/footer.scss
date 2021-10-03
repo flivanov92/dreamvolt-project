@@ -63,4 +63,17 @@
       background-color: $item-fourth;
     }
   }
+
+
+  &__info-text,
+  &__info {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+
+  }
+
+  &__info-text {
+    flex-direction: column;
+  }
 }

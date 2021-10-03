@@ -1,22 +1,24 @@
-[
+{
+  "iconList": [
     {
-        "icon": "facebook",
-        "link": "https://facebook.com/changeme",
-        "label": "Facebook"
+      "icon": "facebook",
+      "link": "https://facebook.com/changeme",
+      "label": "Facebook"
     },
     {
-        "icon": "youtube2",
-        "link": "https://youtube.com/changeme",
-        "label": "YouTube"
+      "icon": "youtube2",
+      "link": "https://youtube.com/changeme",
+      "label": "YouTube"
     },
     {
-        "icon": "whatsapp",
-        "label": "Whatsapp",
-        "link": "https://whatsapp.com/changeme"
+      "icon": "whatsapp",
+      "label": "Whatsapp",
+      "link": "https://whatsapp.com/changeme"
     },
     {
-        "icon": "instagram",
-        "link": "https://instagram.com/changeme",
-        "label": "Instagram"
+      "icon": "instagram",
+      "link": "https://instagram.com/changeme",
+      "label": "Instagram"
     }
-]
+  ]
+}

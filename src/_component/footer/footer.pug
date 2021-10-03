@@ -1,5 +1,5 @@
 ul.footer   
-    each socialmedia in data.footer
+    each socialmedia in data.footer.iconList
         li.footer__social
             div(class=`dreamvolt-${socialmedia.icon}`)
             span= socialmedia.label
@@ -10,3 +10,18 @@ ul.footer
 //-             div(class=`dreamvolt-${socialmedia.icon}`)
 //-             span= socialmedia.label 
 
+
+ul.footer__info 
+    li 
+        .dreamvolt-logo 
+    li
+        ul.footer__info-text 
+            li Abu Dhabi
+            li Dubai 
+            li London
+    li 
+        ul.footer__info-text 
+            li Phone +971 563384405
+            li E-mail: social@dreamvolt.com
+
+.footer__copy &copy; 2021 Dreamvolt 
