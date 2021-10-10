@@ -15,6 +15,7 @@
 
   &__intro {
     display: flex;
+    flex-direction: column;
   }
 
   &__body,
@@ -33,9 +34,7 @@
     box-sizing: border-box;
     position: relative;
 
-    &:first-child {
-      padding-left: 0;
-    }
+
 
     &:not(:last-child):after {
       content: "";
@@ -70,25 +69,78 @@
   &__extra {
     text-align: right;
     color: grey;
-    grid-column: 2/3;
+    grid-column: span 1;
   }
 
   &__extra-image {
-    grid-column: 2/3;
-    grid-row: 2/4;
+    grid-column: span 1;
+    grid-row: span 1;
     justify-self: center;
   }
 
   &__button1 {
-    grid-column: 1/2;
-    grid-row: 4/4;
+    grid-column: span 1;
     margin-left: 25%;
   }
 
   &__button {
-    grid-column: 1/2;
-    grid-row: 4/4;
+    grid-column: span 1;
     margin-left: 2%;
     margin-top: 20%;
   }
+
+  &__extra {
+    text-align: right;
+    color: grey;
+    grid-column: span 1;
+  }
+
+  &__extra-image {
+    grid-column: span 1;
+    grid-row: span 1;
+    justify-self: center;
+  }
+
+  &__button1 {
+    grid-column: span 1;
+    margin-left: 25%;
+  }
+
+  &__button {
+    grid-column: span 1;
+    margin-left: 2%;
+    margin-top: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .welcome {
+    &__extra {
+      grid-column: 2/3;
+    }
+
+    &__extra-image {
+      grid-column: 2/3;
+      grid-row: 2/4;
+    }
+
+    &__button1 {
+      grid-column: 1/2;
+    }
+
+    &__button {
+      grid-column: 1/2;
+    }
+
+    &__intro-message {
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+
+    &__intro {
+      flex-direction: row;
+    }
+  }
+
 }

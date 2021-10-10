@@ -16,7 +16,10 @@
     font-weight: 300;
     color: $transparentGrey;
     text-align: center;
-    padding: 0 84px;
+    padding: 0 1rem;
+    background-color: #fafafa;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 
 
   }
@@ -104,6 +107,7 @@
     list-style-type: none;
     gap: 2rem;
     padding: 0;
+    flex-direction: column;
 
   }
 
@@ -141,6 +145,7 @@
 
   &__description {
     text-align: center;
+    padding: 6px;
   }
 
 }
@@ -171,4 +176,20 @@
 .item__icon>div::before {
   color: white;
   position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .item {
+    &__wrapper {
+      flex-direction: row;
+    }
+  }
+
+  .info-section {
+
+    &__description {
+      padding: 0 84px;
+    }
+  }
+
 }
