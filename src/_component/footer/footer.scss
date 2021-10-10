@@ -1,8 +1,10 @@
 .footer {
   display: flex;
-  width: 100%;
-  padding: 0;
+  min-width: 843px;
+  padding-right: 40px;
   list-style-type: none;
+  margin-bottom: 0;
+
 
   &__new {
     display: flex;
@@ -71,12 +73,15 @@
     display: flex;
     list-style-type: none;
     gap: 10px;
-    background-color: #add9ed;
+    background-color: white;
     color: black;
-    width: 100%;
+    // width: 100%;
     height: 200px;
     align-items: center;
-    padding-left: 100px;
+    // padding-left: 100px;
+    justify-content: center;
+    margin-top: 0px;
+
   }
 
   &__info-text {
@@ -96,5 +101,11 @@
     padding-left: 300px;
     list-style-type: none;
     text-align: center;
+  }
+
+  &__info {
+    min-width: 803px;
+    // margin: 0 auto;
+    // padding-right: -10px;
   }
 }
