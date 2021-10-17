@@ -19,6 +19,16 @@
       "icon": "instagram",
       "link": "https://instagram.com/changeme",
       "label": "Instagram"
+    },
+    {
+      "icon": "tiktok-1324440243881667301_0",
+      "link": "https://Tiktok.com/changeme",
+      "label": "Tiktok"
+    },
+    {
+      "icon": "twitch",
+      "link": "https://myblog.com/changeme",
+      "label": "Blog"
     }
   ]
 }

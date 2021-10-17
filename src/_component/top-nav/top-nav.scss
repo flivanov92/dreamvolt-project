@@ -21,7 +21,7 @@
       position: absolute;
       top: 35px;
       left: 20px;
-      width: calc(100% - 40px);
+      width: calc(15% - 40px);
       background: #12beff;
       height: 3px;
     }
@@ -45,7 +45,7 @@
       &:after {
         background: #12beff;
         left: 18px;
-        width: calc(100% - 40px);
+        width: calc(15% - 40px);
       }
     }
 

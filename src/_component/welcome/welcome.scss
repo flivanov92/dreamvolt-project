@@ -4,11 +4,16 @@
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: contain;
+    display: grid;
+    grid-gap: 10px;
+    width: 150%;
   }
 
   &__footer {
     color: #f8ab18;
-    margin-top: 7rem;
+    margin: 1rem 0;
+    margin-left: 20px;
+
   }
 
   //   flex-grow: 1;
@@ -30,21 +35,21 @@
     font-family: Rubik;
     font-size: 24px;
     line-height: 30px;
-    font-weight: 500;
+    font-weight: 500px;
     box-sizing: border-box;
     position: relative;
 
 
 
-    &:not(:last-child):after {
-      content: "";
-      width: 12px;
-      height: 3px;
-      background-color: $darkgrey;
-      position: absolute;
-      right: -7px;
-      top: 31px;
-    }
+    // &:not(:last-child):after {
+    //   content: "";
+    //   width: 12px;
+    //   height: 3px;
+    //   background-color: $darkgrey;
+    //   position: absolute;
+    //   right: -7px;
+    //   top: 31px;
+    // }
 
     &:nth-child(1) {
       color: $pink;
@@ -63,6 +68,7 @@
     font-size: 30px;
     color: grey;
     line-height: 1.5;
+    margin-left: 20px;
 
   }
 
@@ -80,41 +86,52 @@
 
   &__button1 {
     grid-column: span 1;
-    margin-left: 25%;
   }
 
   &__button {
     grid-column: span 1;
-    margin-left: 2%;
-    margin-top: 20%;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   &__extra {
-    text-align: right;
+    text-align: left;
     color: grey;
     grid-column: span 1;
+    margin-left: 30px;
   }
 
   &__extra-image {
     grid-column: span 1;
     grid-row: span 1;
-    justify-self: center;
+    margin-left: 30px;
+    justify-self: left;
+
   }
 
   &__button1 {
     grid-column: span 1;
-    margin-left: 25%;
+    justify-self: center;
+    display: flex;
+    padding-left: 0;
   }
 
   &__button {
     grid-column: span 1;
-    margin-left: 2%;
-    margin-top: 20%;
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .welcome {
+
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      width: 1000px;
+
+
+    }
+
     &__extra {
       grid-column: 2/3;
     }
@@ -125,11 +142,12 @@
     }
 
     &__button1 {
-      grid-column: 1/2;
+      display: flex;
+      padding-left: 0;
     }
 
     &__button {
-      grid-column: 1/2;
+      display: flex;
     }
 
     &__intro-message {
@@ -141,6 +159,16 @@
     &__intro {
       flex-direction: row;
     }
+
+    &__footer {
+      margin-top: 1rem;
+    }
+
+    &:not(:last-child):after {
+      content: "";
+      background-color: $darkgrey;
+    }
+
   }
 
 }

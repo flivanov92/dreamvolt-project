@@ -36,7 +36,11 @@
     }
 
     &:nth-child(4) {
-      background-color: $item-fourth;
+      background-color: $item-second;
+    }
+
+    &:nth-child(5) {
+      background-color: $item-first;
     }
   }
 
@@ -64,6 +68,14 @@
 
     &:nth-child(4) {
       background-color: $item-fourth;
+    }
+
+    &:nth-child(5) {
+      background-color: $item-second;
+    }
+
+    &:nth-child(6) {
+      background-color: $item-sixth;
     }
   }
 
@@ -126,6 +138,10 @@
     &__info {
       height: 200px;
       padding: 40px;
+    }
+
+    .item__title-footer {
+      padding-top: 0;
     }
   }
 
