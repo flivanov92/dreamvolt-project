@@ -7,7 +7,20 @@
     display: grid;
     grid-gap: 10px;
     width: 150%;
+
+    .dreamvolt-arrow-down2 {
+      background-color: paleturquoise;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: flex;
+      justify-self: center;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
   }
+
 
   &__footer {
     color: #f8ab18;
@@ -120,7 +133,10 @@
     grid-column: span 1;
     margin-left: 30px;
   }
+
+
 }
+
 
 @media screen and (min-width: 1024px) {
   .welcome {
@@ -170,5 +186,4 @@
     }
 
   }
-
 }

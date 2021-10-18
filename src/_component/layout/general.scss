@@ -20,12 +20,54 @@ body {
   border-radius: 1rem;
   width: 100%;
 
+  .dreamvolt-arrow-down2 {
+    background-color: paleturquoise;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+  }
+
+  .dreamvolt-arrow-down2:nth-of-type(6) {
+    display: none;
+  }
+
+  .dreamvolt-arrow-up2 {
+    background-color: paleturquoise;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
   &-720 {
     width: 100%;
     margin: 0 auto;
     // height: 720px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+
+
+    .dreamvolt-arrow-down2 {
+      background-color: paleturquoise;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: flex;
+      justify-self: center;
+      justify-content: center;
+      align-items: center;
+      grid-column: 1/ -1;
+
+    }
   }
 }
 
@@ -33,10 +75,20 @@ body {
   .content {
     width: 960px;
 
+
+
+
     &-720 {
       width: 720px;
       grid-template-columns: repeat(2, 1fr);
+
+      .dreamvolt-arrow-up2 {
+        align-items: center;
+        grid-column: 1/ -1;
+      }
     }
+
+
   }
 
 }
