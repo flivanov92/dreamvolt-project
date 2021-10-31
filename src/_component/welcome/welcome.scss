@@ -124,9 +124,8 @@
 
   &__button1 {
     grid-column: span 1;
-    justify-self: center;
     display: flex;
-    padding-left: 0;
+    margin-left: 30px;
   }
 
   &__button {
@@ -150,6 +149,7 @@
 
     &__extra {
       grid-column: 2/3;
+      margin-left: -200px;
     }
 
     &__extra-image {
@@ -160,10 +160,12 @@
     &__button1 {
       display: flex;
       padding-left: 0;
+      margin-left: 20px;
     }
 
     &__button {
       display: flex;
+      margin-left: -200px;
     }
 
     &__intro-message {
