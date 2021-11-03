@@ -21,8 +21,8 @@
     "pnp": false
   },
   "config": {
-    "customUrl": "http://pug-starter.codetap.academy",
-    "githubUrl": "http://github.com/flivanov92/dreamvolt-project.git",
+    "customUrl": "https://pug-starter.codetap.academy",
+    "githubUrl": "https://github.com/flivanov92/dreamvolt-project",
     "deployToGithubIo": true,
     "directory": {
       "development": "tmp",
