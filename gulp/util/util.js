@@ -73,7 +73,7 @@ const getBaseUrl = (args, config) => {
     }
   }
   return baseUrl;
-}
+};
 
 const getImageCollection = obj => {
   return (
