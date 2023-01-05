@@ -21,9 +21,9 @@
     "pnp": false
   },
   "config": {
-    "customUrl": "www.dreamvolt.com",
+    "customUrl": "/",
     "githubUrl": "https://github.com/flivanov92/dreamvolt-project",
-    "deployToGithubIo": true,
+    "deployToGithubIo": false,
     "directory": {
       "development": "tmp",
       "production": "build",
