@@ -21,7 +21,7 @@
     "pnp": false
   },
   "config": {
-    "customUrl": "https://inspiring-jelly-a2fdcc.netlify.app",
+    "customUrl": "https://dreamvolt-vanilla-javascript.netlify.app/",
     "githubUrl": "https://github.com/flivanov92/dreamvolt-project",
     "deployToGithubIo": false,
     "directory": {
